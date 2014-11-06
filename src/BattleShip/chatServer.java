@@ -51,13 +51,10 @@ public class chatServer extends Thread
 				PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true); 
 				BufferedReader in = new BufferedReader(new InputStreamReader( clientSocket.getInputStream())); 
 				String inputLine; 
-				while ((inputLine = in.readLine()) != null) 
+				while ((inputLine = in.readLine()) != "QQ I QUIT THIS ShIT") 
 				{ 
 					System.out.println ("Server: " + inputLine); 
-					out.println(inputLine); 
-
-					if (inputLine.equals("bye")) 
-						break; 
+					out.println(inputLine);
 				} 
 				out.close(); 
 				in.close(); 

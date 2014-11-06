@@ -23,20 +23,35 @@ public class chatClient {
         }
         
         BufferedReader stdIn = new BufferedReader(new InputStreamReader(System.in));
-        String userInput;
-
+        String userInput = null;
+        String userName = null;
         System.out.println ("Type \"bye\" to close");
-        while ((userInput = stdIn.readLine()) != null) 
+        System.out.println ("Type /alias to change alias");
+        
+        while (true) 
         	{
-        		
+        		userInput = stdIn.readLine();
         		out.println(userInput);
-        		if (userInput.equals("Bye."))
-        			break;
-        		System.out.println("echo: " + in.readLine());
-        	}
+        		
+	        	if (userInput.startsWith("/")){
+	        		String[] checkCommand = userInput.split(" ");
+	        		switch(checkCommand[0]){
+		        		case "/alias": 	String[] newAlias = userInput.split(" ");
+		            					userName = newAlias[1];
+		            					continue;
+		            	default: System.out.println("Commant does not exist!");
+	        		}
+	        		
+	        	}
+        		
+	        	else{
+        		System.out.println(userName + ": " + in.readLine());
+	        	}
+	        
         out.close();
         in.close();
         stdIn.close();
         chatSocket.close();
     }
+}
 }
