@@ -28,8 +28,9 @@ public class chatClient {
         System.out.println ("Type \"bye\" to close");
         System.out.println ("Type /alias to change alias");
         
-        while (true) 
+        while (userInput != "QQ I QUIT THIS ShIT") 
         	{
+        		userInput = null;
         		userInput = stdIn.readLine();
         		out.println(userInput);
         		
@@ -45,13 +46,13 @@ public class chatClient {
 	        	}
         		
 	        	else{
-        		System.out.println(userName + ": " + in.readLine());
+        		System.out.println(userName + ": " + userInput);
 	        	}
-	        
+	        	userInput = null;
+        	}
         out.close();
         in.close();
         stdIn.close();
         chatSocket.close();
-    }
-}
+	}
 }
