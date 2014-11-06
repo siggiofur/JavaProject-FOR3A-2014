@@ -1,4 +1,4 @@
-JavaProject-FOR3A-2014
+jAVApROJECT-for3a-2014
 ======================
-Project is being worked on by Me, Theep and Neverstone,
-Battleshit game using streams, sockets, threads and other such useful things.
+pROJECT IS BEING WORKED ON BY mE, tHEEP AND nEVERSTONE,
+bATTLESHIT GAME USING STREAMS, SOCKETS, THREADS AND OTHER SUCH USEFUL THINGS.
