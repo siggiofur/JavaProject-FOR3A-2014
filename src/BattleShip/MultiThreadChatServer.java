@@ -1,3 +1,5 @@
+package BattleShip;
+
 import java.io.*;
 import java.net.Socket;
 import java.net.ServerSocket;
