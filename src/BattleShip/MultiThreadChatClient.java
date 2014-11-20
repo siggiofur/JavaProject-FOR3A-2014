@@ -1,4 +1,4 @@
-package BattleShip;
+//package BattleShip;
 
 import java.io.DataInputStream;
 import java.io.PrintStream;
@@ -25,7 +25,7 @@ public class MultiThreadChatClient implements Runnable {
     // The default port.
     int portNumber = 2222;
     // The default host.
-    String host = "10.201.66.226";
+    String host = "149.126.82.12";
 
     if (args.length < 2) {
       System.out
