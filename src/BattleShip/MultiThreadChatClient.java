@@ -80,7 +80,7 @@ public class MultiThreadChatClient implements Runnable {
    * 
    * @see java.lang.Runnable#run()
    */
-  @Override
+  
   public void run() {
     /*
      * Keep on reading from the socket till we receive "Bye" from the
