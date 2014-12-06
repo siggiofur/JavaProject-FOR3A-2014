@@ -20,7 +20,7 @@ public class Game {
 		
 		Computer.displaytoEnemy();
 		
-		while (Human.hasLost() == false && Computer.hasLost() == false)
+		while (!Human.hasLost() && !Computer.hasLost())
 		{
 			Computer.receiveAttack(Human.attack());
 			Computer.displaytoEnemy();

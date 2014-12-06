@@ -6,6 +6,7 @@ public class ShipList {
 	public ShipList() 
 	{
 		patrol_boat = new Ship(2);
+		bigger_boat = new Ship(3);
 	}
 	
 	public void shipHit(int a)

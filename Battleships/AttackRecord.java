@@ -1,4 +1,3 @@
-
 public class AttackRecord {
 	private boolean[][] record;
 	
@@ -16,6 +15,6 @@ public class AttackRecord {
 	{
 		//checks if the attack has been made before
 		return record[x][y];	
-	}
 
+	}
 }
