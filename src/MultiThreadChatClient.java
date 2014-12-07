@@ -23,7 +23,7 @@ public class MultiThreadChatClient implements Runnable {
   public static void main(String[] args) {
 
     // The default port.
-    int portNumber = 2020;
+    int portNumber = 2222;
     // The default host.
     String host = "localhost";
 
@@ -46,7 +46,7 @@ public class MultiThreadChatClient implements Runnable {
       System.err.println("Don't know about host " + host);
     } catch (IOException e) {
       System.err.println("Couldn't get I/O for the connection to the host "
-          + host);
+        + host);
     }
 
     /*

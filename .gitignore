@@ -3,4 +3,5 @@
 *.sublime-project
 *.project
 *.classpath
-node_modules/
+*.class
+/node_modules/
