@@ -11,16 +11,11 @@ app.set('port', process.env.PORT || 8080); // set our port
 
 app.use(express.static('public'));
 
-var router = express.Router(); // get an instance of the express Router
-
 //routes
-router.get('/', function(req, res) {
+app.get('/', function(req, res) {
     console.log(req.ip + ' : req /');
     res.render('index');
 });
-
-// all of our routes will be prefixed with /api
-app.use('/', router);
 
 // comunitcate with client via socket
 io.sockets.on('connection', function(socket) {
@@ -43,7 +38,8 @@ io.sockets.on('connection', function(socket) {
     });
 
     socket.on('disconnect', function(){
-        console.log(socket.id + ' : disconnected');
+        console.log(socket.id + ' : Disconnected');
+        javalink.write('/quit' + '\r\n');
         javalink.end();
     });
 });
