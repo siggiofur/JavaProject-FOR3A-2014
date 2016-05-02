@@ -74,7 +74,7 @@ public class Player {
 				}
 				catch (InputMismatchException e)
 				{
-					System.out.println("The information you have input is not valid. Please try again.");
+					System.out.println("The information you have input is not valid. Please try again. :(");
 					valid = false;
 				}
 				
